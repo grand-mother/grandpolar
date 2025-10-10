@@ -352,12 +352,9 @@ class AsdfReadTraces(AsdfTraces):
         event.network.name = self.meta["site"]
         a_pol = np.rad2deg(d_simu["angle_polar"])
         if self.meta["type_trace"] == "Voc":
-            event.set_unit_axis(r"$\mu V$", "dir", f"Voc {a_pol:.2f}")
+            event.set_unit_axis(r"$\mu V$", "dir", f"Voc")
         elif self.meta["type_trace"] == "Efield":
-            if self.traces.shape[1] == 1:
-                event.set_unit_axis(r"$\mu V/m$", "pol", f"Efield {a_pol:.2f}")
-            else:
-                event.set_unit_axis(r"$\mu V/m$", "dir", "Efield")
+            event.set_unit_axis(r"$\mu V/m$", "idx", f"Efield polar {a_pol:.1f} deg")
         else:
             print(self.meta)
             raise
