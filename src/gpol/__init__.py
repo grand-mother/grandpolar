@@ -1,0 +1,5 @@
+import pathlib
+
+def get_path_gp300():
+    here = pathlib.Path(__file__)
+    return here.parent.join('..','..','gp300')
