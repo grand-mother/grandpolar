@@ -29,6 +29,9 @@ from DC2 simulation:
 * `volt-ash_xx_yyyy.asdf` : GP300 response to Efield `efield_xx_yyyy.asdf`
     * sampling 500MHz
     * no noise
+* Transfer functions used 
+    * Effective length model HFSS : Light_GP300Antenna_XXarm_leff.npz
+    * RF Chain DC2.1rc, see [gp300 directory](gp300/readme.md)
 
 ### Antenna voltage background 
 
@@ -173,6 +176,7 @@ gresp.set_paramters_simu(fs_mhz, size_out)
 gresp.add_galactic_component(evt10, lst)
 ```
 
+With galactic ASD anfd RF chain defined in [gp300 directory](gp300/readme.md)
 
 ## Models
 

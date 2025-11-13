@@ -8,7 +8,7 @@ With function [save_asd_galaxy()](https://github.com/grand-mother/grand/blob/0a9
 
 ![psd](/docs/images/psd_gal_lst1.png)
 
-# Global RF chaine DC2.1rc
+# Global RF chain version DC2.1rc
 
 From file TF_RF_Chain_DC2.1rc.npy
 
