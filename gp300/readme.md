@@ -24,3 +24,7 @@ With script [extract_rf_chain.py](https://github.com/grand-mother/grand/blob/dev
 Using both files, we can defined GP300 galactic response and compute for example sigma ADU for each direction and each hour of local sideral time.
 
 ![gal resp](/docs/images/sigma_galactic_ADU.png)
+
+How reproduce this figure ?
+
+With function [do_sigma_galactic()](https://github.com/grand-mother/grandpolar/blob/3bb8464c226f8f449463270ee58a35942730e0f4/src/gpol/simu/gal_gp300.py#L24) in this package.
