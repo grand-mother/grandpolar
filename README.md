@@ -5,10 +5,10 @@ DC2 proposition of reconstruction based on polarization of air shower EField
 
 * git clone https://github.com/grand-mother/grandpolar.git
 * python -m pip install git+https://github.com/luckyjim/RadioShower.git@0.1.0
-* cd grandpol
+* cd grandpolar
 * source gpol_init.sh
 
-## Data DC2 Polar
+## Dataset DC2 Polar
 
 on CCIN2P3:
 * /sps/grand/simu/dc2_pol/v2
@@ -39,7 +39,7 @@ After trigged voltage 10% of traces are selected, finaly DC2 polar dataset conte
 
 ### Antenna voltage background 
 
-GP300 response to Efield `efield_xx_yyyy.asdf` by changing the polarization angle and remove Cerenkov ring by 1/$r^2$ amplitude decrease.
+GP300 response to Efield `efield_xx_yyyy.asdf` by changing the polarization angle and remove Cerenkov ring by $1/r^2$ amplitude decrease.
  
 * `volt-bkg-90_xx_yyyy.asdf` : by adding 90 to the polarization 
 
@@ -161,7 +161,7 @@ Where :
     * core_nwu : Core position in NWU GRAND Frame
     
 * `evt10` is a `Handling3dTraces` object like in GRANDLIB, see [tutorial](https://github.com/grand-mother/grand/blob/dev_sim2root/examples/basis/class_Handling3dTraces.ipynb), example of attributs :
-    * `evt10.traces` is a numpy array of traces of event
+    * `evt10.traces` is a numpy array with shape (nb_du, 3, 1024)
     * `evt10.d_simu` is a dictionary of parameters of simulation (xmax, core, energy) 
 
 
