@@ -16,6 +16,10 @@ on CCIN2P3:
 from DC2 simulation:
 * /sps/grand/DC2Training/ZHAireS
 
+After trigged voltage 10% of traces are selected, finaly DC2 polar dataset contents arround :
+* 5.000 events
+* 200.000 traces 
+
 
 ### Efield
 
@@ -98,7 +102,7 @@ root (AsdfObject)
 │ ├─shape (tuple)
 │ │ └─[0] (int): 20916
 │ └─dtype (VoidDType): [('du_id', '<i4'), ('start_s', '<i8'), ('start_ns', '<f8'), ('azi', '<f4'), ('d_zen', '<f4')]
-├─network (NDArrayType)
+├─network (NDArrayType)Calibration file
 │ ├─shape (tuple)
 │ │ └─[0] (int): 400
 │ └─dtype (VoidDType): [('du_id', '<i4'), ('pos_nwu', '<f4', (3,))]
