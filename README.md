@@ -139,11 +139,39 @@ options:
 ```python
 from rshower.io.events.asdf_traces import AsdfReadTraces
 
-fevents = AsdfReadTraces(args.file.name)
-event = fevents.get_event(args.index)
+fevents = AsdfReadTraces(file_asdf)
+evt10 = fevents.get_event(10)
 ```
 
-Where event is a `Handling3dTraces` object like in GRANDLIB, data traces is stored in `traces` attribut. See [tutorial](https://github.com/grand-mother/grand/blob/dev_sim2root/examples/basis/class_Handling3dTraces.ipynb)
+Where :
+* `fevents.d_asdf` contents raw data in file, by example `fevents.d_asdf["events"]` is a structured numpy array with named column
+    * evt2ftr : index of first trace in event 
+    * run_nb : run number of event  from ROOT file
+    * event_nb : event number of event  from ROOT file
+    * idx : : idx of event  from ROOT file
+    * energy : energy of astroparticule
+    * xmax_nwu : Xmax position in NWU GRAND Frame
+    * core_nwu : Core position in NWU GRAND Frame
+    
+* `evt10` is a `Handling3dTraces` object like in GRANDLIB, see [tutorial](https://github.com/grand-mother/grand/blob/dev_sim2root/examples/basis/class_Handling3dTraces.ipynb), example of attributs :
+    * `evt10.traces` is a numpy array of traces of event
+    * `evt10.d_simu` is a dictionary of parameters of simulation (xmax, core, energy) 
+
+
+## GP300 galactic response (noise)
+
+DC2 polar dataset is without noise, you can create noise on the fly during your processing with `GalacticRespGP300` class and add noise to `Handling3dTraces` object like `evt10`
+
+```python
+from gpol.simu.gal_gp300 import GalacticRespGP300
+
+size_out = 1024
+fs_mhz = 500
+lst = 18
+gresp = GalacticRespGP300()
+gresp.set_paramters_simu(fs_mhz, size_out)
+gresp.add_galactic_component(evt10, lst)
+```
 
 
 ## Models
