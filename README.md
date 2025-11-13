@@ -146,9 +146,9 @@ evt10 = fevents.get_event(10)
 Where :
 * `fevents.d_asdf` contents raw data in file, by example `fevents.d_asdf["events"]` is a structured numpy array with named column
     * evt2ftr : index of first trace in event 
-    * run_nb : run number of event  from ROOT file
-    * event_nb : event number of event  from ROOT file
-    * idx : : idx of event  from ROOT file
+    * run_nb : run number of event from ROOT file
+    * event_nb : event number of event from ROOT file
+    * idx : index of event in ROOT file
     * energy : energy of astroparticule
     * xmax_nwu : Xmax position in NWU GRAND Frame
     * core_nwu : Core position in NWU GRAND Frame
