@@ -11,7 +11,7 @@ DC2 proposition of reconstruction based on polarization of air shower EField
 ## Dataset DC2 Polar
 
 on CCIN2P3:
-* /sps/grand/simu/dc2_pol/v2
+* /sps/grand/simu/dc2_polar/v2
 
 from DC2 simulation:
 * /sps/grand/DC2Training/ZHAireS
