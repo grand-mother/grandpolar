@@ -186,7 +186,7 @@ gresp.set_paramters_simu(fs_mhz, size_out)
 gresp.add_galactic_component(evt10, lst)
 ```
 
-With galactic ASD and RF chain defined in [gp300 directory](gp300/readme.md). The method of "noise generator" from PSD is explained in [notebook of mogwai package](https://github.com/luckyjim/mogwai/blob/main/doc/noise_wf.ipynb)
+With galactic ASD and RF chain defined in [gp300 directory](gp300) by numpy file. The method of "noise generator" from PSD is explained in [notebook of mogwai package](https://github.com/luckyjim/mogwai/blob/main/doc/noise_wf.ipynb).
 
 ## Models
 
