@@ -20,6 +20,10 @@ After trigged voltage 10% of traces are selected, finaly DC2 polar dataset conte
 * 5.000 events
 * 200.000 traces 
 
+Here the Healpix hit map
+
+![hit map](docs/images/healpix_hit.png)
+
 
 ### Efield
 
@@ -44,6 +48,8 @@ GP300 response to Efield `efield_xx_yyyy.asdf` by changing the polarization angl
 * `volt-bkg-90_xx_yyyy.asdf` : by adding 90 to the polarization 
 
 * `volt-bkg-rnd_xx_yyyy.asdf` : with random polarization angle 
+
+As the polar angle is changed, antenna response can't be very low and the trace will not have a pulse that would not pass the trigger.
 
 ### IO access
 
