@@ -4,7 +4,7 @@ DC2 proposition of reconstruction based on polarization of air shower EField
 ## Installation
 
 * git clone https://github.com/grand-mother/grandpolar.git
-* python -m pip install git+https://github.com/luckyjim/RadioShower.git@0.1.0
+* python -m pip install git+https://github.com/luckyjim/RadioShower.git@0.1.1
 * cd grandpolar
 * source gpol_init.sh
 
@@ -198,6 +198,6 @@ With galactic ASD and RF chain defined in [gp300 directory](gp300) by numpy file
 
 #### PSD Efield along the direction and amplitude of the voltage
 
-## Polar trigger
+## Polar trigger level 2
 
 ## Polar Wiener reconstruction of Efield
