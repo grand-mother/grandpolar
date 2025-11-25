@@ -196,6 +196,8 @@ With galactic ASD and RF chain defined in [gp300 directory](gp300) by numpy file
 
 #### PSD Efield model with 4 parameters
 
+$PSD(f)=M.\exp^{-a.f^{\alpha}}+\sigma^2$ 
+
 ![hit map](docs/images/fit_psd.png)
 
 #### PSD Efield along the direction and amplitude of the voltage
